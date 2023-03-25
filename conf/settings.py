@@ -53,7 +53,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'rest_framework_simplejwt'
 ]
-
+REST_FRAMEWORK = {
+'DEFAULT_AUTHENTICATION_CLASSES': (
+'rest_framework_simplejwt.authentication.JWTAuthentication',
+   )
+}
 
 ROOT_URLCONF = 'conf.urls'
 
@@ -73,6 +77,7 @@ TEMPLATES = [
     },
 ]
 
+
 # REST_FRAMEWORK = {
 #     'DEFAULT_AUTHENTICATION_CLASSES': [
 #         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -91,8 +96,10 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'host.docker.internal',
+        'HOST': 'host.docker.internal', 
         'PORT': '5433',
+
+        
     }
 }
 
