@@ -21,7 +21,7 @@ COPY . .
 ENV PYTHONUNBUFFERED=1
 
 # Expose the port the application will run on
-EXPOSE 8000
+# EXPOSE 8000
 
 
 # Run the command to start the application
