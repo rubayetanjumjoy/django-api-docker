@@ -24,7 +24,7 @@ class UserList(APIView):
         users = User.objects.all()
         serializer = UserSerializer(users, many=True)
         
-        
+        print('failed but included')
 
         content = {'message': 'Hello, xyz'}
         return Response(data=serializer.data)
