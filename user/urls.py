@@ -11,8 +11,8 @@ router.register(r'users', UserViewSet)
 
 
 urlpatterns = [
-    path('getalluser/', UserList.as_view(), name ='user'),
-    path('getsingleuser/', SingleUser.as_view(), name ='user'),
+    path('getalluser/', UserList.as_view(), name ='alluser'),
+    path('getsingleuser/', SingleUser.as_view(), name ='singleuser'),
 ]
 
 urlpatterns+=router.urls

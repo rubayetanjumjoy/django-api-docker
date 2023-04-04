@@ -103,13 +103,15 @@ DATABASES = {
         
     }
 }
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'djongo',
-#         'NAME': 'db',
+#         'NAME': 'testdb',
 #         'port':27017
 #     }
 # }
+
 
 
 # Password validation

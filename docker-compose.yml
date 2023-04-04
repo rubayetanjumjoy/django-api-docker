@@ -13,6 +13,7 @@ services:
       
     volumes:
       - D:\Projects\Test\db:/var/lib/postgresql/data
+  
   web:
     build: .
     

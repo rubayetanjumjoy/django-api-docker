@@ -20,6 +20,7 @@ class UserList(APIView):
     def get(self, request):
         auth_header = request.GET.get('access')
         print(auth_header)
+        
         users = User.objects.all()
         serializer = UserSerializer(users, many=True)
         
