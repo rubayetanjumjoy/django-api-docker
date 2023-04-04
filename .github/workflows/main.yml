@@ -1,8 +1,8 @@
-name: hello-world
+name: automated test
 on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "Hello World!"
+      - name: 1st step
+        run: python manage.py test
