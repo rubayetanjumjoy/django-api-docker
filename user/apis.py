@@ -24,7 +24,7 @@ class UserList(APIView):
         users = User.objects.all()
         serializer = UserSerializer(users, many=True)
         
-
+        
 
         content = {'message': 'Hello, xyz'}
         return Response(data=serializer.data)
