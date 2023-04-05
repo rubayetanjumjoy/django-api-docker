@@ -6,7 +6,7 @@ from rest_framework.test import APITestCase, APIClient
 from rest_framework_simplejwt.tokens import RefreshToken
 
 # testing get url
-# class APIView(TestCase):
+class APIView(TestCase):
 #     # initialize test
  
 #     def setUp(self):
