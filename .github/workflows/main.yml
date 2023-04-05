@@ -13,6 +13,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run docker
-        run: docker-compose up
-      - name: Run 
-        run: docker-compose run web python manage.py test
+        run: python manage.py test
+      
