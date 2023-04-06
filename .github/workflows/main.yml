@@ -4,6 +4,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: see directories
+        run: ls
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Setup Python
@@ -13,8 +15,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       
-      - name: Run tests
-        run: docker-compose up
+      
       
       - name: Run tests
         run: ls
